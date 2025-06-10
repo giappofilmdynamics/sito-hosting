@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0; /* togli padding orizzontale */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  justify-content: space-between; /* logo a sinistra, nav a destra */
+}
+
+.logo {
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+  cursor: pointer;
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+.logoSvg {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+  transition: fill 0.3s ease;
+
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin-right: 2rem; /* spazio dal bordo destro */
+}
+
+.navLink {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: auto;
+}
